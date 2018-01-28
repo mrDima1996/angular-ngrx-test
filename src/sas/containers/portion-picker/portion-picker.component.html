@@ -1,0 +1,11 @@
+<div class="portion-picker">
+	<box-item 
+		*ngFor="let item of portionList"
+		[name]="item?.tm | date: 'dd/MM/yyyy'"
+		[id]="item?.id"
+		(selected)="onSelect(item)"
+		[isChecked]="(choosenPortions$ | async)?.id == item?.id">
+		
+	</box-item>
+	
+</div>

@@ -1,0 +1,6 @@
+<item-list 
+		[objectList]="deviceList$ | async"
+		[selectedItem]="choosenDevice$ | async"
+		[column]="true"
+		(selected)="onSelect($event)">
+</item-list>

@@ -1,0 +1,8 @@
+<div>
+	<item-list 
+		[objectList]="ktList$ | async"
+		[selectedItem]="choosenKt$ | async"
+		(selected)="onSelect($event)">
+	</item-list>
+
+</div>

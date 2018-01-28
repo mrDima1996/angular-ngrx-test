@@ -1,0 +1,6 @@
+<div class="portion-display">
+	<p>{{(choosenPortions$ | async).id}}</p>
+	<p>{{(choosenPortions$ | async).tm | date: 'dd/MM/yyyy'}}</p>
+	<p>Данные устройства:</p>
+	<p >{{deviceData$ | async | json}}</p> 
+</div>

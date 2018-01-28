@@ -1,0 +1,9 @@
+<div>
+	<item-list 
+		[objectList]="sasList$ | async"
+		[selectedItem]="choosenSas$ | async"
+		(selected)="onSelect($event)">
+	</item-list>
+
+
+</div>

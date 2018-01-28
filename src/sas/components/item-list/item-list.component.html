@@ -1,0 +1,10 @@
+<div class="item-list"
+	[class.column]="column">
+	<box-item 
+		*ngFor="let item of objectList"
+		[name]="item?.name"
+		[id]="item?.id"
+		(selected)="onSelect($event)"
+		[isChecked]="selectedItem?.id == item?.id">
+	</box-item>
+</div>

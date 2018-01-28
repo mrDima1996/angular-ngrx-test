@@ -1,0 +1,22 @@
+.item-list {
+	display: flex;
+
+	padding: 5px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border-bottom: 1px solid black;
+    vertical-align: top;
+
+    &.column { 
+    	    height: 300px;
+
+    		flex-direction: column;
+    		display: inline-flex;
+    		overflow: auto;
+
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+    }
+}

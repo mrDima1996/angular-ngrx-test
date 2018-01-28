@@ -1,0 +1,7 @@
+<div>
+	<item-list 
+		[objectList]="groupList$ | async"
+		[selectedItem]="choosenGroup$ | async"
+		(selected)="onSelect($event)">
+	</item-list>
+</div>
